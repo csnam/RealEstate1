@@ -10,3 +10,28 @@ a {
 .radiotext {
   margin: 10px 10px 0px 0px;
 }
+
+.sectionA{
+  background-color: aliceblue;
+  text-align: center
+}
+
+.text_total{
+  width:100%;
+  border: 0;
+}
+table td input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+}
+.radiowidth{
+  width: 40px;
+}
+.buttonwidth{
+  width:80px;
+  height:40px;
+}
+
+ #wrapper{width:600px;  text-align:center;} 
+/* button{height:20px; position:relative; margin: -20px -50px; width:100px; top:50%; left:50%;} */

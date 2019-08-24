@@ -3,84 +3,97 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
   </head>
   <body>
-    <h1>부동상매매 전자 계약서 </h1>
-    <!-- <table  style="width:100% border=1">  //<table  style="width:100% border=1"></table> -->
-    <table border="1">
-      <tr><th colspan="4"> 매물정보</th></tr>
-      <tr>
-        <th>구분</th> 
-        <td colspan="3">
-          <div class="radio">
-             <label><input type="radio" id='regular' name="optradio">공동주택</label>
-             <label><input type="radio" id='regular' name="optradio">단독주택</label>
-             <label><input type="radio" id='regular' name="optradio">상가</label>
-             <label><input type="radio" id='regular' name="optradio">토지</label>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <th>건물소재지</th>
-        <td colspan="3"> <input type="text" style="width:100%; border: 0;" placeholder ="경기도 화성시 동탄광역시 환승로 73 206동 3802호" > </td>
-      </trn>
-      <tr>
-        <th>건물 면적 </th>
-        <td> <input type="text" placeholder="56.2481 m²"> </td>
-        <th>건물 용도 </th>
-        <td> <input type="text" > </td>
-      </tr>
-      <tr>
-          <th>토지 면적(대지권) </th>
-          <td> <input type="text" placeholder="22.0874 m²"> </td>
-          <th>토지 용도 </th>
-          <td> <input type="text" placeholder="대지"> </td>
-      </tr>
-      <!-----------------------------  계약정보----------------------->
-      <tr><th colspan="4">계약정보</th></tr>
-      <tr>
-        <th>매매대금</th>
-        <th><input type="text" placeholder="오억원(&#8361 500,000,000)"></th>
-        <th>계약날짜</th>
-        <th><input type="text" placeholder="2019.8.10"></th>
-      </tr>
-      <tr>
-         <th>계약금</th>
-         <th colspan="3"><input type="text" style="width:100%; border: 0;" placeholder="오천만 (&#8361 50,000,000)원정은 2019.8.10에 지불한다"></th>
-      </tr>
-      <tr>
-          <th>중도금</th>
-          <th colspan="3"><input type="text" style="width:100%; border: 0;" placeholder="이억원 (&#8361 50,000,000)원정은 2019.8.30에 지불한다"></th>
-       </tr>
-       <tr>
-          <th>잔금</th>
-          <th colspan="3"><input type="text" style="width:100%; border: 0;" placeholder="이오천만 (&#8361 250,000,000)원정은 2019.9.10에 지불한다"></th>
-       </tr>
-       <tr height="80">
-          <th>특이사항</th>
-          <td colspan="3"><textarea rows="4" style="width:99%; border:0;"></textarea></td>
-       </tr>
+  
+    <div>     
+      <table width="600" border="1" >
+            <tr><th colspan="4" style="border: 0" bgcolor="Ivory"> <h1>부동산 매매 전자 계약서</h1></th></tr> 
+            <tr><th colspan="4" class="sectionA" > 매물정보</th></tr>
+            <tr >
+              <th>구분</th> 
+              <td colspan="3">
+                <div class="radio" >
+                  <label><input class="radiowidth" type="radio"  id='regular1' name="optradio1">공동주택</label>
+                  <label><input class="radiowidth" type="radio"  id='regular2' name="optradio2">단독주택</label>
+                  <label><input class="radiowidth" type="radio"  id='regular3' name="optradio3"> 상 가</label>
+                  <label><input class="radiowidth" type="radio"  id='regular4' name="optradio4"> 토 지</label>
+                </div>
+             
+              </td>
+            <tr>
+              <th>건물소재지</th>
+              <td colspan="3"> <input type="text"  placeholder ="경기도 화성시 동탄광역시 환승로 73 206동 3802호" > </td>
+            </trn>
+            <tr>
+              <th>건물 면적 </th>
+              <td> <input type="text" placeholder="56.2481 m²"> </td>
+              <th>건물 용도 </th>
+              <td> <input type="text" > </td>
+            </tr>
+            <tr>
+                <th>토지 면적(대지권) </th>
+                <td> <input type="text" placeholder="22.0874 m²"> </td>
+                <th>토지 용도 </th>
+                <td> <input type="text" placeholder="대지"> </td>
+            </tr>
+            <!-----------------------------  계약정보----------------------->
+            <tr><th colspan="4" bgcolor="AliceBlue">계약정보</th></tr>
+            <tr>
+              <th>매매대금</th>
+              <td><input type="text" placeholder="오억원(&#8361 500,000,000)"></td>
+              <th>계약날짜</th>
+              <td><input type="text" placeholder="2019.8.10"></td>
+            </tr>
+            <tr>
+              <th>계약금</th>
+              <th colspan="3"><input type="text" style="width:100%; border: 0;" placeholder="오천만 (&#8361 50,000,000)원정은 2019.8.10에 지불한다"></th>
+            </tr>
+            <tr>
+                <th>중도금</th>
+                <th colspan="3"><input type="text" style="width:100%; border: 0;" placeholder="이억원 (&#8361 50,000,000)원정은 2019.8.30에 지불한다"></th>
+            </tr>
+            <tr>
+                <th>잔금</th>
+                <th colspan="3"><input type="text" style="width:100%; border: 0;" placeholder="이오천만 (&#8361 250,000,000)원정은 2019.9.10에 지불한다"></th>
+            </tr>
+            <tr height="80">
+                <th>특이사항</th>
+                <td colspan="3"><textarea rows="4" style="width:99%; border:0;"></textarea></td>
+            </tr>
+            
+
+            <!-----------------------------  계약당사자 정보----------------------->
+            <tr><th colspan="4" class="sectionA" >계약당사자</th></tr>
+            <tr><th colspan="2">매도인</th><th colspan="2">매수인</th></tr>
+            <tr>
+              <th>성명</th><td><input type="text" placeholder="정재영"></td>
+              <th>성명</th><td><input type="text" placeholder="정영숙"></td>
+            </tr>
+            <tr>
+              <th>주민등록번호</th><td><input type="text" placeholder="000000-0000000"></td>
+              <th>주민등록번호</th><td><input type="text" placeholder="000000-0000000"></td>
+            </tr>
+            <tr>
+                <th>주소</th><td><input type="text" placeholder="경기도 화성시 통탄광역 환승로73 206동 3802호"></td>
+                <th>주소</th><td><input type="text" placeholder="서울시 강남구 강남대로 101-1 "></td>
+            </tr>
+            <tr height="80">
+                <th>기타사항</th><td colspan="3"> <textarea rows="4" style="width:99%; border:0;"></textarea></td>
+            </tr>
+      </table>
+      <br></br>
+      <div  id="wrapper">
+          <input type="button" class="buttonwidth" value="제출" >
+          <input type="button" class="buttonwidth" value="취소" >
+      </div>
+    </div> 
+
+
       
 
-       <!-----------------------------  계약당사자 정보----------------------->
-       <tr><th colspan="4">계약당사자</th></tr>
-       <tr><th colspan="2">매도인</th><th colspan="2">매수인</th></tr>
-       <tr>
-         <th>성명</th><td><input type="text" placeholder="정재영"></td>
-         <th>성명</th><td><input type="text" placeholder="정영숙"></td>
-       </tr>
-       <tr>
-         <th>주민등록번호</th><td><input type="text" placeholder="000000-0000000"></td>
-         <th>주민등록번호</th><td><input type="text" placeholder="000000-0000000"></td>
-       </tr>
-       <tr>
-          <th>주소</th><td><input type="text" placeholder="경기도 화성시 통탄광역 환승로73 206동 3802호"></td>
-          <th>주소</th><td><input type="text" placeholder="서울시 강남구 강남대로 101-1 "></td>
-       </tr>
-       <tr height="80">
-          <th>기타사항</th><td colspan="3"> <textarea rows="4" style="width:99%; border:0;"></textarea></td>
-       </tr>
-    </table>
+     
   </body>
 </html>
 
